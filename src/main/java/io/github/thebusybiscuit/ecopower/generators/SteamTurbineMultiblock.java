@@ -23,7 +23,7 @@ public class SteamTurbineMultiblock extends SimpleSlimefunItem<ItemUseHandler> i
     public SteamTurbineMultiblock(Category category, SlimefunItemStack item, SteamTurbine turbine) {
         super(category, item, RecipeType.MULTIBLOCK, new ItemStack[] {
                 null, turbine.getItem(), null,
-                null, new CustomItem(Material.WATER_BUCKET, "&fWater (Bubble Column)"), null,
+                null, new CustomItem(Material.WATER_BUCKET, "&f水 (气泡柱)"), null,
                 null, new ItemStack(Material.MAGMA_BLOCK), null
         });
     }
@@ -32,7 +32,7 @@ public class SteamTurbineMultiblock extends SimpleSlimefunItem<ItemUseHandler> i
     public ItemUseHandler getItemHandler() {
         return e -> {
             e.cancel();
-            e.getPlayer().sendMessage("Psst, this Item is just a dummy. You need to place the actual structure down.");
+            e.getPlayer().sendMessage("这个物品只是个模型, 你需要按照合成配方中的方式摆放.");
         };
     }
 

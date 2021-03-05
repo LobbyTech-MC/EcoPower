@@ -31,7 +31,7 @@ public class WindTurbineMultiblock extends SimpleSlimefunItem<ItemUseHandler> im
     public ItemUseHandler getItemHandler() {
         return e -> {
             e.cancel();
-            e.getPlayer().sendMessage("Psst, this Item is just a dummy. You need to place the actual structure down.");
+            e.getPlayer().sendMessage("这个物品只是个模型, 你需要按照合成配方中的方式摆放.");
         };
     }
 

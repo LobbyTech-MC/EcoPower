@@ -55,7 +55,7 @@ public class LightningReceptor extends SlimefunItem implements EnergyNetProvider
 
         Long previousLightningStrike = lastLightningStrike.get(l);
 
-        if (previousLightningStrike != null && System.currentTimeMillis() - previousLightningStrike.longValue() < MIN_DELAY) {
+        if (previousLightningStrike != null && System.currentTimeMillis() - previousLightningStrike < MIN_DELAY) {
             return 0;
         }
 
